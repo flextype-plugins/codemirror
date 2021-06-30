@@ -40,6 +40,7 @@ assetsLoadOnSite: false
 # Blocks
 blocks:
   Codemirror:
+    type: Codemirror
     properties:
       name: codemirror
       
