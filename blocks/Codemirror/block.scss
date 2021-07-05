@@ -1,3 +1,9 @@
+@import "../../../blueprints/node_modules/bootstrap/scss/functions";
+@import "../../../blueprints/assets/src/scss/variables.scss";
+@import "../../../blueprints/node_modules/bootstrap/scss/mixins";
+@import "../../../blueprints/node_modules/bootstrap/scss/utilities";
+
+
 .CodeMirror {
     display: block;
     width: 100%;
@@ -5,13 +11,17 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
+    color: $body-color;
+    background-color: $white;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid $gray-400;
     appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: $border-radius;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     padding: 0;
     margin: 0;
+}
+
+.CodeMirror-gutters {
+    border-top-left-radius: $border-radius;
 }
